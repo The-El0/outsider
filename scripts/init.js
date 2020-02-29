@@ -210,7 +210,7 @@ nav__primary.init();
     //stripePhotos_showStripe();
 
 
-    // Form - Help text next to inputs - handle Expand/Collapse 
+    // Form - Help text next to inputs - handle Expand/Collapse
     help__form.init();
 
 
@@ -259,26 +259,26 @@ nav__primary.init();
             expiryDate: new Date("April 7, 2026 11:11:00"),
             //expiryDate: new Date(86400000);, // in seconds - 86400000 = 1 day
             //Counter update interval
-            interval: 500,       
+            interval: 500,
             //Localize labels of counter
             localization: {
-                years: "days",       
-                days: "days",       
+                years: "days",
+                days: "days",
                 hours: "hours",
                 minutes: "minutes",
                 seconds: "seconds"
             },
             //Animation duration in milliseconds from 0 to interval
-            speed: 250,     // has to be lower than  mbComingsoon.interval 
+            speed: 250,     // has to be lower than  mbComingsoon.interval
             callBack: Function          //Function executed on expiry or if espired
-                            //Callback function pass e reference to the 
-                            //mbComingSoon object itself as parameter 
+                            //Callback function pass e reference to the
+                            //mbComingSoon object itself as parameter
                             // Example:
                             // function(t) {
                             //  $(t).mbComingSoon({expiryDate:  a New Date})
                             //  $(t).mbComingSoon('start');
                             // }
-        }); 
+        });
 */
 
 
@@ -294,7 +294,7 @@ nav__primary.init();
 $(window).resize(function () {
     // Recalculate slider height on window resize
     //swiper_hp_setMaxHeight();
-    
+
     // Resize Google Map
     //resizeGoogleMap();
 });
