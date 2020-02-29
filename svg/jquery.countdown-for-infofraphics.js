@@ -7,10 +7,10 @@
  *------------------------ COUNT DOWN for INFOGRAPHICS 1.1 ------------------------
  * ========================================================================
  * Copyright 2016 Simply Brilliant; web: http://simplybrilliant.cz
- * 
+ *
  * Licensed under MIT http://opensource.org/licenses/MIT
- * ======================================================================== 
- 
+ * ========================================================================
+
 
 
 === USAGE ===
@@ -31,9 +31,9 @@
         interval: Number,   // Update interval in milliseconds (default = 1000))
         //Localize labels of counter
         localization: {
-            years:  "años",           
+            years:  "años",
             months:  "meses",
-            days:   "dias",           
+            days:   "dias",
             hours:  "horas",
             minutes: "minutes",
             seconds: "secondas"
@@ -41,7 +41,7 @@
         callBack: {
             // What should happend, when counter expires?
             // alert( 'It's time to...!' );
-        }  
+        }
     });
 
 
@@ -64,13 +64,10 @@
         $('#myCounter').iCounter('start');
 
 
-
-   
-
     // Change/Update options on the fly
-   .iCounter(options) 
-        
-        usage: 
+   .iCounter(options)
+
+        usage:
 
         $('#myCounter').iCounter({
             speed: 300;
@@ -82,8 +79,8 @@
    // DEVELOPERS NOTES:
    // ------------------
 
-    #1 |    Max time that the counter can display is 999 days 23h 59' 59". 
-            If time is greater hours, minutes and seconds will be displayed 
+    #1 |    Max time that the counter can display is 999 days 23h 59' 59".
+            If time is greater hours, minutes and seconds will be displayed
             correctly, but days will be 999 until decrease under this quota.
 
 
@@ -94,7 +91,7 @@
  */
 
 
-// Create CLOSURE -- will pervent conflicts with duplicate variable names 
+// Create CLOSURE -- will pervent conflicts with duplicate variable names
 (function ($) {
     // Class Definition
     var SB_iCounter;
@@ -154,10 +151,10 @@
             ;
             var now = new Date()
             var diff = this.end.getTime() - now.getTime();
-            
+
             // CountDown expired !!
             if (diff <= 0) {
-                alert('countdown expired ---c sdksdk ');
+console.log('countdown expired!');
                 return result;
             }
             /*

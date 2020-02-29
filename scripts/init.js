@@ -7,22 +7,22 @@ if (typeof console == "undefined") {
     this.console = {error: function () {}};
 }
 
- 
+
 
 
 
 /*=========================================================================================================================================================
- 
+
  init.js - Initialize functions
- 
- 
+
+
  Index of FUNCTIONS TO INITIALIZE:
  =================================
- 
+
  #00.00 - GLOBAL VARIABLES & SETTINGS
  #01.00 - EXECUTE when DOM is READY
- 
- 
+
+
  ==========================================================================================================================================================*/
 
 
@@ -30,9 +30,9 @@ if (typeof console == "undefined") {
 
 
 /*=========================================================================================================================================================
- 
+
  #01.00 - EXECUTE when DOM is READY
- 
+
  =========================================================================================================================================================*/
 
 $(function () {
@@ -97,7 +97,7 @@ $( 'input' ).each( function(){
     if( value.length > 0 ) {
         //alert('NOT empty');
         parent.addClass('filled');
-    } 
+    }
 })
 
 
@@ -121,7 +121,7 @@ var value = $.trim( input.val() );  //will trim the white spaces.
 if( value.length > 0 ) {
     //alert('NOT empty');
     parent.addClass('filled');
-} 
+}
 // EMPTY input
 else if( value.length === 0 ) {
     parent.removeClass('filled');
@@ -133,7 +133,7 @@ else if( value.length === 0 ) {
 
 
 
-// Dotaz se týká mojí pojistné smlouvy 
+// Dotaz se týká mojí pojistné smlouvy
 $('#question--myInsuranceContract').on('click', function(){
     $('#infoAboutYourContract').slideToggle();
     $('#birthCertificateNumber').closest('.row').slideToggle();
@@ -149,7 +149,7 @@ $('#question--myInsuranceContract').on('click', function(){
                             // -------------------------
                             $('.devNotes--toggle').on('click', function(){
                                 $('.devNote').slideToggle();
-                            });                            
+                            });
 
 
 
@@ -157,20 +157,20 @@ $('#question--myInsuranceContract').on('click', function(){
 
 
     // GENERAL functions
-    // -------------------------	
+    // ------------------------
 nav__primary.init();
 
 
     // Support of external SVG              source: https://github.com/jonathantneal/svg4everybody  -- TO DO: Explore attributes (like role="img")
     svg4everybody();
 
-    
+
     // Images & Video Viewer
     //modalViewer_images('.popup-gallery');
     //modalViewer_video('.viewer-video');
 
     // Tabs
-    tabs.init();  
+    tabs.init();
 
 
     // HOMEPAGE
@@ -201,7 +201,7 @@ nav__primary.init();
     //resizeGoogleMap();
     //mapFilter_toggleVsibility();    // Show hide Filter
     //mapFilter_extendedSearch();     // Handle show/hide Extended Search
-    
+
 
 
 
@@ -220,33 +220,33 @@ nav__primary.init();
     //Passing an object containing full options
     $('#counter--magazineLaunch .iCounter').iCounter({
             // new Date(year, month, day, hours, minutes, seconds, milliseconds);
-            expiryDate: new Date("September 1, 2016 10:50:00"), 
+            expiryDate: new Date("December 31, 2020 12:12:12"),
             //expiryDate: new Date(86400000);, // in seconds - 86400000 = 1 day
             //Counter update interval
-            interval: 500,       
+            interval: 500,
             //Localize labels of counter
             /*
             localization: {
-                years:  "años",    
-                months:  "meses",       
-                days:   "dias",           
+                years:  "años",
+                months:  "meses",
+                days:   "dias",
                 hours:  "horas",
                 minutes: "minutes",
                 seconds: "secondas"
             },
             */
             //Animation duration in milliseconds from 0 to interval
-            speed: 250,     // has to be lower than  mbComingsoon.interval 
+            speed: 250,     // has to be lower than  mbComingsoon.interval
             callBack: Function          //Function executed on expiry or if espired
-                            //Callback function pass e reference to the 
-                            //mbComingSoon object itself as parameter 
+                            //Callback function pass e reference to the
+                            //mbComingSoon object itself as parameter
                             // Example:
                             // function(t) {
                             //  $(t).mbComingSoon({expiryDate:  a New Date})
                             //  $(t).mbComingSoon('start');
                             // }
-        }); 
-    
+        });
+
 
 
 
