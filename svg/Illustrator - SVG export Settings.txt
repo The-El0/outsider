@@ -1,0 +1,32 @@
+Adobe Illustrator - Export settings for SVG:
+
+File >> Save As
+	- "Save as type": "SVG"
+	- "Use Artboards": yes (check the checkbox)
+		- "Range": "{number}"  -  {number} = number/ID of an Artboard
+	
+	- hit "Save" button
+
+	
+	
+	DIALOG "SVG Options":
+	---------------------
+		"Fonts" section:
+			"Type": "Convert to outline" (NOTE: do NOT use for long text - use it onfly for Logos and similar stuff)
+			
+		"Options" section:
+			- SKIP this settings (this only matters if you are including bitmap images - BUT they should not be part of SVG sprite!)
+
+		"Advanced Options" section:
+			"CSS Properties": "Presentation attributes"
+			"Decimal places": "1"
+			"Encoding": "Unicode (UTF-8)"
+			all following checkboxes: un-check them
+		
+			- hit "OK" button
+			
+			
+			
+Source:
+=======
+	http://stackoverflow.com/questions/13236365/optimal-settings-for-exporting-svgs-for-the-web-from-illustrator
