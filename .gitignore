@@ -1,0 +1,11 @@
+# DEV environment
+build
+node_modules
+*.log
+
+
+# OS
+.directory
+.nosync
+.DS_Store
+.icloud

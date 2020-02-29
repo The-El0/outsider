@@ -1,0 +1,48 @@
+//
+//  CONSTANTS
+//
+$GR: 1.61803398875;
+$PI: 3.14159265359;
+$unit: 1rem;
+
+
+
+
+//
+//  Greyscale
+//
+$white: #fff;
+$black: darken($white, 100%);
+
+$grey-90: darken($white, 90%);
+$grey-80: darken($white, 80%);
+$grey-70: darken($white, 70%);
+$grey-60: darken($white, 60%);
+$grey-50: darken($white, 50%);
+$grey-40: darken($white, 40%);
+$grey-30: darken($white, 30%);
+$grey-20: darken($white, 20%);
+$grey-10: darken($white, 10%);
+$grey-9:  darken($white, 9%);
+$grey-8:  darken($white, 8%);
+$grey-7:  darken($white, 7%);
+$grey-6:  darken($white, 6%);
+$grey-5:  darken($white, 5%);
+$grey-4:  darken($white, 4%);
+$grey-3:  darken($white, 3%);
+$grey-2:  darken($white, 2%);
+$grey-1:  darken($white, 1%);
+
+
+
+
+//
+//  Colors
+//
+$red:     red;
+$orange:  orange;
+$yellow:  yellow;
+$green:   green;
+$blue:    blue;
+$indigo:  indigo;
+$purple:  purple;

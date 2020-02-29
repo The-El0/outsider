@@ -1,0 +1,19 @@
+//
+//  Animations
+//
+// pattern:  name | duration | timing function | delay | iteration count | direction
+
+
+
+
+//
+//  Animation demo
+//
+
+@keyframes a--rotate {
+  0%    { transform: rotate(0deg); }
+  100%  { transform: rotate(360deg); }
+}
+.a--rotate {
+  animation: a--rotate 300ms linear 0s infinite;
+}

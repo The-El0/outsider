@@ -1,0 +1,47 @@
+html {
+  box-sizing: border-box;
+  //scroll-behavior: smooth;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+html,
+body {
+  height: 100%;
+}
+
+
+
+body {
+  //background-color: $body--background-color;
+}
+
+
+
+
+//
+//  Viewport
+//
+.l-viewport {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+
+
+//
+//  Page
+//
+.l-page {
+  //display: block;
+  //margin-top: _space(1);
+  //margin-bottom: _space(2);
+}
