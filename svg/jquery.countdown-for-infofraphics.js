@@ -4,14 +4,9 @@
 /// <reference path="../../Scripts/jquery-1.10.2-vsdoc.js" />
 
 /**************************************************************************
+
+
  *------------------------ COUNT DOWN for INFOGRAPHICS 1.1 ------------------------
- * ========================================================================
- * Copyright 2016 Simply Brilliant; web: http://simplybrilliant.cz
- *
- * Licensed under MIT http://opensource.org/licenses/MIT
- * ========================================================================
-
-
 
 === USAGE ===
 
@@ -20,7 +15,7 @@
     // ------------------
 
     // Expiry date of counter:
-    $('iCounter--candies').iCounter( [--expiryDate--] || [--String--] ); 
+    $('iCounter--candies').iCounter( [--expiryDate--] || [--String--] );
 
 
 
